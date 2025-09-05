@@ -2,7 +2,6 @@ import numpy as np
 from brainchop.niimath import conform
 from pydawn import utils, webgpu
 
-
 def apply(kernel_source, buffer_bytes):
     """
     Apply a WebGPU kernel to a buffer.
