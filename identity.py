@@ -33,8 +33,7 @@ def apply(kernel_source, buffer_bytes):
     shader_module = utils.create_shader_module(dev, kernel_source)
     
     # Create input and output buffers
-    input_buffer = utils.create_buffer(
-        dev, 
+    input_buffer = utils.create_buffer( dev, 
         aligned_size, 
         webgpu.WGPUBufferUsage_Storage | webgpu.WGPUBufferUsage_CopyDst
     )
